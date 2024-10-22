@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Portfolio</title>
+  <title>Portefeuille</title>
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -32,13 +32,23 @@
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
+  <!-- ======= senguage switch ======= -->
+  <div id="lnswitch">
+    <div class="language-switcher">
+      <div class="language-switcher">
+        <a href="index-en.html" id="lang-en"><img src="./assets/img/en.png"> en</a> | 
+        <a href="index-fr.html" id="lang-fr"><img src="./assets/img/fr.png"> fr</a>
+      </div>
+    </div>
+  </div>
+
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
 
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="avatar" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Mohamed LEGHDAICH</a></h1>
+        <h1 class="text-light"><a href="index-fr.html">Mohamed LEGHDAICH</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-github"></i></a>
           <a href="#" class="facebook"><i class="bx bx-mail-send"></i></a>
@@ -48,11 +58,11 @@
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-cog"></i> <span>Skills</span></a></li>
-          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Accueil</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>À propos</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-cog"></i> <span>Compétences</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>CV</span></a></li>
+          <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projets</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -63,7 +73,7 @@
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container aos-init aos-animate" data-aos="fade-in" style="text-align: center;margin-left: 100px;">
       <h1>Mohamed LEGHDAICH</h1>
-      <p><span class="typed" data-typed-items="Developer,UI/UX Designer,Video Game Developer,Freelancer">Developer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span></p>
+      <p><span class="typed" data-typed-items="Programmeur,UI/UX Designer,Développeur de jeux vidéo,Freelancer">Programmeur</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true">|</span></p>
     </div>
   </section><!-- End Hero -->
 
@@ -74,7 +84,7 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>About</h2>
+          <h2>À propos</h2>
         </div>
 
         <div class="row">
@@ -82,26 +92,26 @@
             <img src="assets/img/profile-img - Copy2.jpg" class="img-fluid" alt="" style="border: solid 10px rgb(0, 0, 135); border-radius: 50%;">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>UI/UX Designer, Programmer &amp; Web Developer.</h3>
+            <h3>UI/UX Designer, Programmeur &amp; Développeur web.</h3>
             <div class="row">
               <div style="width:235px;">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>04/09/1989</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span style="font-size:0.9rem;">Casablanca, Morocco</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Anniversaire:</strong> <span>04/09/1989</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Ville:</strong> <span style="font-size:0.9rem;">Casablanca, Maroc</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Disponible</span></li>
                 </ul>
               </div>
               <div style="width:430px;">
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>35</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span style="font-size:0.9rem;">Specialized IT Development Technician (Bac+2)</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Diplome:</strong> <span style="font-size:0.9rem;">Technicien Spécialisé en développement informatique (Bac+2)</span></li>
                 </ul>
               </div>
             </div>
             <p>
-              "Mohamed Leghdaich", a programmer and web designed. Builder of the "Gamesman" website, "medled Social" platform and more (more about projects below).<br>
-              If interested in my web developpement services, or for collaboration, or just to hang out and have a chat, please <a href="#contact">use contact info bellow <i class="bx bx-arrow-to-bottom"></i></a>.
-            </p>
+              "Mohamed Leghdaich", un programmeur et designer web. Créateur du site "Gamesman", de la plateforme "medled Social" , et d'autres (plus d'informations sur les projets ci-dessous).<br>
+              Si vous êtes intéressé par mes services de développement web, ou pour une collaboration, ou juste pour discuter, veuillez <a href="#contact">utiliser les coordonnées ci-dessous <i class="bx bx-arrow-to-bottom"></i></a>.
+             </p>
           </div>
         </div>
 
@@ -113,8 +123,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Skills</h2>
-          <p>Here are some of the tools i master.</p>
+          <h2>Compétences</h2>
+          <p>Voici quelques-uns des outils que je maîtrise.</p>
         </div>
 
         <div class="row skills-content">
@@ -238,8 +248,8 @@
       <div class="container">
 
         <div class="section-title">
-          <h2>Resume</h2>
-          <p>Download my CV from <a href="https://docs.google.com/document/d/1WZ6R_cl5usjPI9cPKU0h2rpUUZCnFcHo/edit?usp=drive_link&ouid=101514454302965610123&rtpof=true&sd=true">Here</a>.</p>
+          <h2>CV</h2>
+          <p>Téléchargez mon CV <a href="https://docs.google.com/document/d/1WZ6R_cl5usjPI9cPKU0h2rpUUZCnFcHo/edit?usp=drive_link&ouid=101514454302965610123&rtpof=true&sd=true">Ici</a>.</p>
         </div>
 
       </div>
@@ -247,21 +257,21 @@
     <!-- ======= End Resume Section ===== -->
 
     <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio section-bg">
+    <section id="projects" class="portfolio section-bg">
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Use the filter below to check some of my products / projects.</p>
+          <h2>Projets</h2>
+          <p>Utilisez le filtre ci-dessous pour consulter certains de mes projets.</p>
         </div>
 
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter="*" class="filter-active">Tout</li>
               <li data-filter=".filter-web">Web design</li>
               <li data-filter=".filter-desktop">Desktop</li>
-              <li data-filter=".filter-videogames">Video Games</li>
+              <li data-filter=".filter-videogames">Jeux vidéo</li>
             </ul>
           </div>
         </div>
@@ -269,67 +279,67 @@
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <a href="portfolio-details.html?id=1" title="More Details">
+              <a href="portfolio-details-fr.html?id=1" title="More Details">
                 <img src="assets/img/portfolio/web/ahlediafa_dashboard.jpg" class="img-fluid" alt="ahlediafa_dashboard"><br>
               </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-desktop">
-            <a href="portfolio-details.html?id=2" title="More Details">
+            <a href="portfolio-details-fr.html?id=2" title="More Details">
               <img src="assets/img/portfolio/desktop/desktops.png" class="img-fluid" alt="desktops">
             </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <a href="portfolio-details.html?id=3" title="More Details">
+            <a href="portfolio-details-fr.html?id=3" title="More Details">
               <img src="assets/img/portfolio/web/ahlediafa_front.jpg" class="img-fluid" alt="ahlediafa_front">
             </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-videogames">
-            <a href="portfolio-details.html?id=4" title="More Details">
+            <a href="portfolio-details-fr.html?id=4" title="More Details">
               <img src="assets/img/portfolio/games/Flipper Cube.jpg" class="img-fluid" alt="Flipper Cube">
             </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <a href="portfolio-details.html?id=5" title="More Details">
+            <a href="portfolio-details-fr.html?id=5" title="More Details">
               <img src="assets/img/portfolio/web/ajax school.jpg" class="img-fluid" alt="ajax school">
             </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-videogames">
-            <a href="portfolio-details.html?id=6" title="More Details">
+            <a href="portfolio-details-fr.html?id=6" title="More Details">
               <img src="assets/img/portfolio/games/aya's day off.jpg" class="img-fluid" alt="aya">
             </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <a href="portfolio-details.html?id=7" title="More Details">
+            <a href="portfolio-details-fr.html?id=7" title="More Details">
               <img src="assets/img/portfolio/web/gamesman.jpg" class="img-fluid" alt="gamesman">
             </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <a href="portfolio-details.html?id=8" title="More Details">
+            <a href="portfolio-details-fr.html?id=8" title="More Details">
               <img src="assets/img/portfolio/web/medled.jpg" class="img-fluid" alt="medled">
             </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-videogames">
-            <a href="portfolio-details.html?id=9" title="More Details">
+            <a href="portfolio-details-fr.html?id=9" title="More Details">
               <img src="assets/img/portfolio/games/james run.jpg" class="img-fluid" alt="james run">
             </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <a href="portfolio-details.html?id=10" title="More Details">
+            <a href="portfolio-details-fr.html?id=10" title="More Details">
               <img src="assets/img/portfolio/web/ait oumdis.jpg" class="img-fluid" alt="ait oumdis">
             </a>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-desktop">
-            <a href="portfolio-details.html?id=11" title="More Details">
+            <a href="portfolio-details-fr.html?id=11" title="More Details">
               <img src="assets/img/portfolio/desktop/pese.png" class="img-fluid" alt="pese">
             </a>
           </div>
@@ -378,12 +388,12 @@
             <form method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group">
-                  <label for="name">Your Name</label>
+                  <label for="name">Votre Nom</label>
                   <input type="text" name="name" class="form-control" id="name" required>
                 </div>
               </div>
               <div class="form-group">
-                <label for="subject">Subject</label>
+                <label for="subject">Sujet</label>
                 <input type="text" class="form-control" name="subject" id="subject" required>
               </div>
               <div class="form-group">
@@ -391,11 +401,11 @@
                 <textarea class="form-control" name="message" rows="10" id="message" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                <div class="loading">Chargement</div>
                 <div class="error-message"></div>
-                <div class="sent-message" id="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message" id="sent-message">Votre message a été envoyé. Merci !</div>
               </div>
-              <div class="text-center"><button type="submit" onclick="sendEmail(event)">Send Message</button></div>
+              <div class="text-center"><button type="submit" onclick="sendEmail(event)">Envoyer le message</button></div>
             </form>
           </div>
 

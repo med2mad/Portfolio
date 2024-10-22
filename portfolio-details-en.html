@@ -44,13 +44,23 @@
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
+  <!-- ======= senguage switch ======= -->
+  <div id="lnswitch">
+    <div class="language-switcher">
+      <div class="language-switcher">
+        <a href="index-en.html" id="lang-en"><img src="./assets/img/en.png"> en</a> | 
+        <a href="index-fr.html" id="lang-fr"><img src="./assets/img/fr.png"> fr</a>
+      </div>
+    </div>
+  </div>
+
   <!-- ======= Header ======= -->
   <header id="header">
     <div class="d-flex flex-column">
 
       <div class="profile">
         <img src="assets/img/profile-img.jpg" alt="avatar" class="img-fluid rounded-circle">
-        <h1 class="text-light"><a href="index.html">Mohamed LEGHDAICH</a></h1>
+        <h1 class="text-light"><a href="index-en.html">Mohamed LEGHDAICH</a></h1>
         <div class="social-links mt-3 text-center">
           <a href="#" class="twitter"><i class="bx bxl-github"></i></a>
           <a href="#" class="facebook"><i class="bx bx-mail-send"></i></a>
@@ -60,12 +70,12 @@
 
       <nav id="navbar" class="nav-menu navbar">
         <ul>
-          <li><a href="index.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-          <li><a href="index.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="index.html#skills" class="nav-link scrollto"><i class="bx bx-cog"></i> <span>Skills</span></a></li>
-          <li><a href="index.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="index.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-          <li><a href="index.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+          <li><a href="index-en.html#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="index-en.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="index-en.html#skills" class="nav-link scrollto"><i class="bx bx-cog"></i> <span>Skills</span></a></li>
+          <li><a href="index-en.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="index-en.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="index-en.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
     </div>
@@ -151,16 +161,16 @@
   <script>
     const data = [
       { "id": 1, "title":'"Ahlediafa" dashboard', "category":'Web design', "tools":'Angular + Nodejs', "url":'', "img1":'web/ahlediafa_dashboard.jpg', "img2":'web/ahlediafa_dashboard2.jpg', "img3":'web/ahlediafa_dashboard3.jpg', "description":'Dashboard for the "Ahlediafa" caterer project.' },
-      { "id": 2, "title":'Desktops', "category":'Desktop', "tools":'VB.Net', "url":'', "img1":'desktop/desktops.png', "img2":'desktop/desktops2.jpg', "img3":'desktop/desktops3.jpg', "description":'Local desktop softwares including: Stock management and invoicing systems for multiple stores ("MAGAZIN SOUFIENE RIAD OULFA" / "CASH PLUS OUKACHA (oulfa)"" / Telephone operator supplier (derb soultan)) , a vehicle rental system , and more.' },
+      { "id": 2, "title":'Desktops', "category":'Desktop', "tools":'VB.Net', "url":'', "img1":'desktop/desktops.png', "img2":'desktop/desktops2.jpg', "img3":'desktop/desktops3.jpg', "description":'Local desktop softwares including: Local stock management and invoicing systems for multiple stores ("MAGAZIN SOUFIENE RIAD OULFA" / "CASH PLUS OUKACHA (oulfa)"" / Telephone operator supplier (derb soultan)) , a vehicle rental system , and more.' },
       { "id": 3, "title":'Traiteur Ahlediafa', "category":'Web design', "tools":'HTML/CSS/JS (static)', "url":'', "img1":'web/ahlediafa_front.jpg', "img2":'web/ahlediafa_front2.jpg', "img3":'web/ahlediafa_front3.jpg', "description":'A frontend website for the "Ahlediafa" caterer project.' },
-      { "id": 5, "title":'Ajax School', "category":'Web design', "tools":'VueJs + Nodejs + Laravel', "url":'', "img1":'web/ajax school.jpg', "img2":'web/ajax school2.jpg', "img3":'web/ajax school3.jpg', "description":'An app teaching multiple ajax coding techniques on different backend server platforms and database system types.' },
+      { "id": 5, "title":'Ajax School', "category":'Web design', "tools":'VueJs + Nodejs + Laravel', "url":'', "img1":'web/ajax school.jpg', "img2":'web/ajax school2.jpg', "img3":'web/ajax school3.jpg', "description":'A webapp teaching multiple ajax coding techniques on different backend server platforms and database system types.' },
       { "id": 6, "title":"Aya's day off", "category":'Video Game', "tools":'C#', "url":'', "img1":"games/aya's day off.jpg", "img2":"games/aya's day off2.jpg", "img3":"games/aya's day off3.jpg", "description":'A 3rd person platformer game, where my sister "Aya" in the weekend goes around the neighbour slaying dragons, ..............the usual.' },
       { "id": 4, "title":'Flipper Cube', "category":'Video Game', "tools":'C#', "url":'', "img1":'games/Flipper Cube.jpg', "img2":'games/Flipper Cube2.jpg', "img3":'games/Flipper Cube3.jpg', "description":'A 3d puzzle game, find all the items and escape.' },
       { "id": 7, "title":'Gamesman', "category":'Web design', "tools":'Laravel', "url":'', "img1":'web/gamesman.jpg', "img2":'web/gamesman2.jpg', "img3":'web/gamesman3.jpg', "description":'A platform sharing flash and other internet based games allowing playing online. The project also gives users the ability to share their own games for everyone to play.' },
       { "id": 9, "title":'James run', "category":'Video Game', "tools":'C#', "url":'', "img1":'games/james run.jpg', "img2":'games/james run2.jpg', "img3":'games/james run3.jpg', "description":'A runner game. Where can you reach ?' },
       { "id": 8, "title":'Medled', "category":'Web design', "tools":'Laravel', "url":'', "img1":'web/medled.jpg', "img2":'web/medled2.jpg', "img3":'web/medled3.jpg', "description":'A WhatsApp clone with some Instagram features. Allowing having friends list, creating and sharing a personal gallery, and having conversations.' },
-      { "id": 10, "title":'Ait oumdis', "category":'Web design', "tools":'HTML/CSS/JS (static)', "url":'', "img1":'web/ait oumdis.jpg', "img2":'web/ait oumdis2.jpg', "img3":'web/ait oumdis3.jpg', "description":'The website made for the "Ait Oumdis" Cooperative to show and sell their natural products' },
-      { "id": 11, "title":'Pese.exe', "category":'Desktop', "tools":'VB.Net', "url":'', "img1":'desktop/pese.png', "img2":'desktop/pese2.jpg', "img3":'desktop/pese3.jpg', "description":'Industrial application for weighing trucks.' },
+      { "id": 10, "title":'Ait oumdis', "category":'Web design', "tools":'HTML/CSS/JS (static)', "url":'', "img1":'web/ait oumdis.jpg', "img2":'web/ait oumdis2.jpg', "img3":'web/ait oumdis3.jpg', "description":'The website made for the "Ait Oumdis" Cooperative to show and sell their natural products.' },
+      { "id": 11, "title":'Pese.exe', "category":'Desktop', "tools":'VB.Net', "url":'', "img1":'desktop/pese.png', "img2":'desktop/pese2.jpg', "img3":'desktop/pese3.jpg', "description":'Local industrial software for weighing trucks.' },
     ];
     
     const params = new URLSearchParams(window.location.search);
@@ -199,6 +209,7 @@
         }
     }
   </script>
+
 </body>
 
 </html>
