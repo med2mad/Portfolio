@@ -74,7 +74,7 @@
           <li><a href="index-fr.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>À propos</span></a></li>
           <li><a href="index-fr.html#skills" class="nav-link scrollto"><i class="bx bx-cog"></i> <span>Compétences</span></a></li>
           <li><a href="index-fr.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>CV</span></a></li>
-          <li><a href="index-fr.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projets</span></a></li>
+          <li><a href="index-fr.html#projects" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projets</span></a></li>
           <li><a href="index-fr.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -125,10 +125,10 @@
             <div class="portfolio-info">
               <h3>Informations sur le projet</h3>
               <ul>
-                <li><strong>Titre</strong>: <span id="title"></li>
-                <li><strong>Catégorie</strong>: <span id="category"></li>
-                <li><strong>Outils</strong>: <span id="tools"></li>
-                <li><strong>URL du projet</strong>: <a id="url" href="#"></a></li>
+                <li><strong>Titre</strong>: <span id="title"></span></li>
+                <li><strong>Catégorie</strong>: <span id="category"></span></li>
+                <li><strong>Outils</strong>: <span id="tools"></span></li>
+                <li><strong>URL du projet</strong>: <span id="url"></span></li>
               </ul>
             </div>
             <div class="portfolio-description">
@@ -162,14 +162,14 @@
     const data = [
       { "id": 1, "title":'"Ahlediafa" dashboard', "category":'Web design', "tools":'Angular + Nodejs', "url":'', "img1":'web/ahlediafa_dashboard.jpg', "img2":'web/ahlediafa_dashboard2.jpg', "img3":'web/ahlediafa_dashboard3.jpg', "description":'Tableau de bord pour le projet de traiteur "Ahlediafa".' },
       { "id": 2, "title":'Desktops', "category":'Desktop', "tools":'VB.Net', "url":'', "img1":'desktop/desktops.png', "img2":'desktop/desktops2.jpg', "img3":'desktop/desktops3.jpg', "description":'Systèmes local de gestion des stocks et de facturation pour plusieurs magasins ("MAGAZIN SOUFIENE RIAD OULFA" / "CASH PLUS OUKACHA (oulfa)" / Fournisseur d\'opérateur téléphonique (derb soultan)), un système de location de véhicules, et plus encore.' },
-      { "id": 3, "title":'Traiteur Ahlediafa', "category":'Web design', "tools":'HTML/CSS/JS (static)', "url":'', "img1":'web/ahlediafa_front.jpg', "img2":'web/ahlediafa_front2.jpg', "img3":'web/ahlediafa_front3.jpg', "description":'Un site web frontend pour le projet de traiteur "Ahlediafa".' },
+      { "id": 3, "title":'Traiteur Ahlediafa', "category":'Web design', "tools":'HTML/CSS/JS (static)', "url":'https://med2mad.github.io/Ahlediafa-Front/', "img1":'web/ahlediafa_front.jpg', "img2":'web/ahlediafa_front2.jpg', "img3":'web/ahlediafa_front3.jpg', "description":'Un site web frontend pour le projet de traiteur "Ahlediafa".' },
       { "id": 5, "title":'Ajax School', "category":'Web design', "tools":'VueJs + Nodejs + Laravel', "url":'', "img1":'web/ajax school.jpg', "img2":'web/ajax school2.jpg', "img3":'web/ajax school3.jpg', "description":'Une application web qui enseigne plusieurs techniques de codage AJAX sur différentes plateformes de serveurs backend et types de systèmes de bases de données.' },
-      { "id": 6, "title":"Aya's day off", "category":'Video Game', "tools":'C#', "url":'', "img1":"games/aya's day off.jpg", "img2":"games/aya's day off2.jpg", "img3":"games/aya's day off3.jpg", "description":'Un jeu de plateforme à la troisième personne, où ma sœur "Aya" passe son week-end à parcourir le quartier en tuant des dragons, ... la routine habituelle.' },
-      { "id": 4, "title":'Flipper Cube', "category":'Video Game', "tools":'C#', "url":'', "img1":'games/Flipper Cube.jpg', "img2":'games/Flipper Cube2.jpg', "img3":'games/Flipper Cube3.jpg', "description":'Un jeu de puzzle 3D, trouvez tous les objets et échappez-vous.' },
-      { "id": 7, "title":'Gamesman', "category":'Web design', "tools":'Laravel', "url":'', "img1":'web/gamesman.jpg', "img2":'web/gamesman2.jpg', "img3":'web/gamesman3.jpg', "description":'Une plateforme de partage de jeux Flash et d\'autres jeux basés sur Internet permettant de jouer en ligne. Le projet offre également aux utilisateurs la possibilité de partager leurs propres jeux pour que tout le monde puisse y jouer.' },
-      { "id": 9, "title":'James run', "category":'Video Game', "tools":'C#', "url":'', "img1":'games/james run.jpg', "img2":'games/james run2.jpg', "img3":'games/james run3.jpg', "description":'Un jeu de course. Jusqu\'où pouvez-vous aller ?' },
-      { "id": 8, "title":'Medled', "category":'Web design', "tools":'Laravel', "url":'', "img1":'web/medled.jpg', "img2":'web/medled2.jpg', "img3":'web/medled3.jpg', "description":'Un clone de WhatsApp avec certaines fonctionnalités d\'Instagram. Permettant d\'avoir une liste d\'amis, de créer et de partager une galerie personnelle, et d\'avoir des conversations.' },
-      { "id": 10, "title":'Ait oumdis', "category":'Web design', "tools":'HTML/CSS/JS (static)', "url":'', "img1":'web/ait oumdis.jpg', "img2":'web/ait oumdis2.jpg', "img3":'web/ait oumdis3.jpg', "description":'Le site web créé pour la Coopérative "Ait Oumdis" afin de montrer et vendre leurs produits.' },
+      { "id": 6, "title":"Aya's day off", "category":'Video Game', "tools":'C#', "url":'https://amysdayoff.netlify.app/', "img1":"games/aya's day off.jpg", "img2":"games/aya's day off2.jpg", "img3":"games/aya's day off3.jpg", "description":'Un jeu de plateforme à la troisième personne, où ma sœur "Aya" passe son week-end à parcourir le quartier en tuant des dragons, ... la routine habituelle.' },
+      { "id": 4, "title":'Flipper Cube', "category":'Video Game', "tools":'C#', "url":'https://med2mad.github.io/Flipper-Cube/', "img1":'games/Flipper Cube.jpg', "img2":'games/Flipper Cube2.jpg', "img3":'games/Flipper Cube3.jpg', "description":'Un jeu de puzzle 3D, trouvez tous les objets et échappez-vous.' },
+      { "id": 7, "title":'Gamesman', "category":'Web design', "tools":'Laravel', "url":'http://gamesman.free.nf/?i=1', "img1":'web/gamesman.jpg', "img2":'web/gamesman2.jpg', "img3":'web/gamesman3.jpg', "description":'Une plateforme de partage de jeux Flash et d\'autres jeux basés sur Internet permettant de jouer en ligne. Le projet offre également aux utilisateurs la possibilité de partager leurs propres jeux pour que tout le monde puisse y jouer.' },
+      { "id": 9, "title":'James run', "category":'Video Game', "tools":'C#', "url":'https://jamesrun.netlify.app/', "img1":'games/james run.jpg', "img2":'games/james run2.jpg', "img3":'games/james run3.jpg', "description":'Un jeu de course. Jusqu\'où pouvez-vous aller ?' },
+      { "id": 8, "title":'Medled', "category":'Web design', "tools":'Laravel', "url":'http://medled.free.nf/?i=1', "img1":'web/medled.jpg', "img2":'web/medled2.jpg', "img3":'web/medled3.jpg', "description":'Un clone de WhatsApp avec certaines fonctionnalités d\'Instagram. Permettant d\'avoir une liste d\'amis, de créer et de partager une galerie personnelle, et d\'avoir des conversations.' },
+      { "id": 10, "title":'Ait oumdis', "category":'Web design', "tools":'HTML/CSS/JS (static)', "url":'https://www.aitoumdis.com/', "img1":'web/ait oumdis.jpg', "img2":'web/ait oumdis2.jpg', "img3":'web/ait oumdis3.jpg', "description":'Le site web créé pour la Coopérative "Ait Oumdis" afin de montrer et vendre leurs produits.' },
       { "id": 11, "title":'Pese.exe', "category":'Desktop', "tools":'VB.Net', "url":'', "img1":'desktop/pese.png', "img2":'desktop/pese2.jpg', "img3":'desktop/pese3.jpg', "description":'Logiciel industriel local pour le pesage des camions.' },
     ];
     
@@ -181,6 +181,7 @@
     document.getElementById('title').innerText = project.title;
     document.getElementById('category').innerText = project.category;
     document.getElementById('tools').innerText = project.tools;
+    document.getElementById('url').innerHTML = project.url? '<a target="_blank" href="'+project.url+'">Clickez ici</a>':'indisponible';
     document.getElementById('url').href = project.url;
     document.getElementById('description').innerText = project.description;
 

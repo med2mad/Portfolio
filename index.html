@@ -6,17 +6,17 @@
         const preferredLang = localStorage.getItem('preferredLanguage');
 
         if (preferredLang) {
-            if (preferredLang === 'fr') {
-                window.location.href = "index-fr.html";
-            } else {
+            if (preferredLang === 'en') {
                 window.location.href = "index-en.html";
+            } else {
+                window.location.href = "index-fr.html";
             }
         } else {
-            window.location.href = "index-en.html";
+            window.location.href = "index-fr.html";
         }
     </script>
 </head>
 <body>
-    <p>If you are not redirected, <a href="index-en.html">click here</a>.</p>
+    <p><a href="index-fr.html">clickez ici</a>.</p>
 </body>
 </html>

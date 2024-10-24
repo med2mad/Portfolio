@@ -74,7 +74,7 @@
           <li><a href="index-en.html#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="index-en.html#skills" class="nav-link scrollto"><i class="bx bx-cog"></i> <span>Skills</span></a></li>
           <li><a href="index-en.html#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-          <li><a href="index-en.html#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="index-en.html#projects" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Projects</span></a></li>
           <li><a href="index-en.html#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
       </nav><!-- .nav-menu -->
@@ -125,10 +125,10 @@
             <div class="portfolio-info">
               <h3>Project information</h3>
               <ul>
-                <li><strong>Title</strong>: <span id="title"></li>
-                <li><strong>Category</strong>: <span id="category"></li>
-                <li><strong>Tools</strong>: <span id="tools"></li>
-                <li><strong>Project URL</strong>: <a id="url" href="#"></a></li>
+                <li><strong>Title</strong>: <span id="title"></span></li>
+                <li><strong>Category</strong>: <span id="category"></span></li>
+                <li><strong>Tools</strong>: <span id="tools"></span></li>
+                <li><strong>Project URL</strong>: <span id="url"></span></li>
               </ul>
             </div>
             <div class="portfolio-description">
@@ -162,14 +162,14 @@
     const data = [
       { "id": 1, "title":'"Ahlediafa" dashboard', "category":'Web design', "tools":'Angular + Nodejs', "url":'', "img1":'web/ahlediafa_dashboard.jpg', "img2":'web/ahlediafa_dashboard2.jpg', "img3":'web/ahlediafa_dashboard3.jpg', "description":'Dashboard for the "Ahlediafa" caterer project.' },
       { "id": 2, "title":'Desktops', "category":'Desktop', "tools":'VB.Net', "url":'', "img1":'desktop/desktops.png', "img2":'desktop/desktops2.jpg', "img3":'desktop/desktops3.jpg', "description":'Local desktop softwares including: Local stock management and invoicing systems for multiple stores ("MAGAZIN SOUFIENE RIAD OULFA" / "CASH PLUS OUKACHA (oulfa)"" / Telephone operator supplier (derb soultan)) , a vehicle rental system , and more.' },
-      { "id": 3, "title":'Traiteur Ahlediafa', "category":'Web design', "tools":'HTML/CSS/JS (static)', "url":'', "img1":'web/ahlediafa_front.jpg', "img2":'web/ahlediafa_front2.jpg', "img3":'web/ahlediafa_front3.jpg', "description":'A frontend website for the "Ahlediafa" caterer project.' },
+      { "id": 3, "title":'Traiteur Ahlediafa', "category":'Web design', "tools":'HTML/CSS/JS (static)', "url":'https://med2mad.github.io/Ahlediafa-Front/', "img1":'web/ahlediafa_front.jpg', "img2":'web/ahlediafa_front2.jpg', "img3":'web/ahlediafa_front3.jpg', "description":'A frontend website for the "Ahlediafa" caterer project.' },
       { "id": 5, "title":'Ajax School', "category":'Web design', "tools":'VueJs + Nodejs + Laravel', "url":'', "img1":'web/ajax school.jpg', "img2":'web/ajax school2.jpg', "img3":'web/ajax school3.jpg', "description":'A webapp teaching multiple ajax coding techniques on different backend server platforms and database system types.' },
-      { "id": 6, "title":"Aya's day off", "category":'Video Game', "tools":'C#', "url":'', "img1":"games/aya's day off.jpg", "img2":"games/aya's day off2.jpg", "img3":"games/aya's day off3.jpg", "description":'A 3rd person platformer game, where my sister "Aya" in the weekend goes around the neighbour slaying dragons, ..............the usual.' },
-      { "id": 4, "title":'Flipper Cube', "category":'Video Game', "tools":'C#', "url":'', "img1":'games/Flipper Cube.jpg', "img2":'games/Flipper Cube2.jpg', "img3":'games/Flipper Cube3.jpg', "description":'A 3d puzzle game, find all the items and escape.' },
-      { "id": 7, "title":'Gamesman', "category":'Web design', "tools":'Laravel', "url":'', "img1":'web/gamesman.jpg', "img2":'web/gamesman2.jpg', "img3":'web/gamesman3.jpg', "description":'A platform sharing flash and other internet based games allowing playing online. The project also gives users the ability to share their own games for everyone to play.' },
-      { "id": 9, "title":'James run', "category":'Video Game', "tools":'C#', "url":'', "img1":'games/james run.jpg', "img2":'games/james run2.jpg', "img3":'games/james run3.jpg', "description":'A runner game. Where can you reach ?' },
-      { "id": 8, "title":'Medled', "category":'Web design', "tools":'Laravel', "url":'', "img1":'web/medled.jpg', "img2":'web/medled2.jpg', "img3":'web/medled3.jpg', "description":'A WhatsApp clone with some Instagram features. Allowing having friends list, creating and sharing a personal gallery, and having conversations.' },
-      { "id": 10, "title":'Ait oumdis', "category":'Web design', "tools":'HTML/CSS/JS (static)', "url":'', "img1":'web/ait oumdis.jpg', "img2":'web/ait oumdis2.jpg', "img3":'web/ait oumdis3.jpg', "description":'The website made for the "Ait Oumdis" Cooperative to show and sell their natural products.' },
+      { "id": 6, "title":"Aya's day off", "category":'Video Game', "tools":'C#', "url":'https://amysdayoff.netlify.app/', "img1":"games/aya's day off.jpg", "img2":"games/aya's day off2.jpg", "img3":"games/aya's day off3.jpg", "description":'A 3rd person platformer game, where my sister "Aya" in the weekend goes around the neighbour slaying dragons, ..............the usual.' },
+      { "id": 4, "title":'Flipper Cube', "category":'Video Game', "tools":'C#', "url":'https://med2mad.github.io/Flipper-Cube/', "img1":'games/Flipper Cube.jpg', "img2":'games/Flipper Cube2.jpg', "img3":'games/Flipper Cube3.jpg', "description":'A 3d puzzle game, find all the items and escape.' },
+      { "id": 7, "title":'Gamesman', "category":'Web design', "tools":'Laravel', "url":'http://gamesman.free.nf/?i=1', "img1":'web/gamesman.jpg', "img2":'web/gamesman2.jpg', "img3":'web/gamesman3.jpg', "description":'A platform sharing flash and other internet based games allowing playing online. The project also gives users the ability to share their own games for everyone to play.' },
+      { "id": 9, "title":'James run', "category":'Video Game', "tools":'C#', "url":'https://jamesrun.netlify.app/', "img1":'games/james run.jpg', "img2":'games/james run2.jpg', "img3":'games/james run3.jpg', "description":'A runner game. Where can you reach ?' },
+      { "id": 8, "title":'Medled', "category":'Web design', "tools":'Laravel', "url":'http://medled.free.nf/?i=1', "img1":'web/medled.jpg', "img2":'web/medled2.jpg', "img3":'web/medled3.jpg', "description":'A WhatsApp clone with some Instagram features. Allowing having friends list, creating and sharing a personal gallery, and having conversations.' },
+      { "id": 10, "title":'Ait oumdis', "category":'Web design', "tools":'HTML/CSS/JS (static)', "url":'https://www.aitoumdis.com/', "img1":'web/ait oumdis.jpg', "img2":'web/ait oumdis2.jpg', "img3":'web/ait oumdis3.jpg', "description":'The website made for the "Ait Oumdis" Cooperative to show and sell their natural products.' },
       { "id": 11, "title":'Pese.exe', "category":'Desktop', "tools":'VB.Net', "url":'', "img1":'desktop/pese.png', "img2":'desktop/pese2.jpg', "img3":'desktop/pese3.jpg', "description":'Local industrial software for weighing trucks.' },
     ];
     
@@ -181,7 +181,7 @@
     document.getElementById('title').innerText = project.title;
     document.getElementById('category').innerText = project.category;
     document.getElementById('tools').innerText = project.tools;
-    document.getElementById('url').href = project.url;
+    document.getElementById('url').innerHTML = project.url? '<a target="_blank" href="'+project.url+'">Click Here</a>':'No link';
     document.getElementById('description').innerText = project.description;
 
     var myModal = document.getElementById('myModal');
