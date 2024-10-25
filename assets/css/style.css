@@ -273,6 +273,8 @@ h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  text-align: center;
+  margin-left: 100px;
 }
 
 #hero h1 {
@@ -543,14 +545,16 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
-.portfolio .portfolio-item {
+.portfolio .portfolio-item p {
   margin-bottom: 30px;
+  text-align: center;
+  color: gray;
 }
 .portfolio .portfolio-item img{
   box-shadow: 4px 4px 8px 0px #bfbfbf;
 }
-.portfolio .portfolio-item img {transition: transform 0.3s ease;}
-.portfolio .portfolio-item img:hover {transform: translateY(-5mm);}
+.portfolio .portfolio-item p {transition: transform 0.3s ease;}
+.portfolio .portfolio-item p:hover {transform: translateY(-5mm);}
 
 .portfolio #portfolio-flters {
   padding: 0;
@@ -1132,6 +1136,10 @@ section {
 }
 
 @media (max-width: 768px) {
+  #hero .hero-container {
+    margin-left: 0;
+  }
+
   .breadcrumbs .d-flex {
     display: block !important;
   }
