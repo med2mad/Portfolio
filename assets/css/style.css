@@ -547,23 +547,31 @@ section {
   border: 2px solid #1f5297;
 }
 
-.resume img{
+.resume .section-title{
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.resume .otherTools{
+  display: flex !important;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.resume .otherTools {
+  text-align: center;
+  color: gray;
+}
+.resume .otherTools p{
+  text-align: center;
+  color: gray;
+}
+.resume .otherTools img{
   width: 120px;
   height: 120px;
   border-radius: 25px;
   border: solid 1px gray;
 }
 
-.otherTools{
-  display: flex !important;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.otherTools p{
-  text-align: center;
-  color: gray;
-}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
