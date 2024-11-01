@@ -565,11 +565,14 @@ section {
   text-align: center;
   color: gray;
 }
+.resume .otherTools p {transition: transform 0.3s ease;}
+.resume .otherTools p:hover {transform: translateY(-5mm);}
 .resume .otherTools img{
   width: 120px;
   height: 120px;
   border-radius: 25px;
   border: solid 1px gray;
+  background-color: white;
 }
 
 /*--------------------------------------------------------------
