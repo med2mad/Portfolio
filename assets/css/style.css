@@ -584,7 +584,7 @@ section {
   color: gray;
 }
 .portfolio .portfolio-item img{
-  box-shadow: 4px 4px 8px 0px #bfbfbf;
+  box-shadow: -4px -4px 8px 0px #bfbfbf;
 }
 .portfolio .portfolio-item p {transition: transform 0.3s ease;}
 .portfolio .portfolio-item p:hover {transform: translateY(-5mm);}
