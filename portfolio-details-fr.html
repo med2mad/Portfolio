@@ -183,11 +183,12 @@
       { "id": 10, "title": 'Ait oumdis', "category": 'Web design', "tools": 'HTML/CSS/JS (static)', "url": 'https://www.aitoumdis.com/', "img1": 'web/ait oumdis.jpg', "img2": 'web/ait oumdis2.jpg', "img3": 'web/ait oumdis3.jpg', "description": 'Le site web créé pour la Coopérative "Ait Oumdis" afin de montrer et vendre leurs produits.' },
       { "id": 11, "title": 'Pese.exe', "category": 'Desktop', "tools": 'VB.Net', "url": '', "img1": 'desktop/pese.png', "img2": 'desktop/pese2.jpg', "img3": 'desktop/pese3.jpg', "description": 'Logiciel industriel local pour le pesage des camions.' },
       { "id": 12, "title": 'Nurse Luck', "category": 'Video Game', "tools": 'C#', "url": 'https://nurseluck.netlify.app/', "img1": 'games/nurse.png', "img2": 'games/nurse2.png', "img3": 'games/nurse3.png', "description": 'Un jeu en 2D, où vous neutralisez des virus et des bactéries dans plusieurs hôpitaux.' },
-      { "id": 13, "title": 'Boutique en ligne multilingue "M A K"', "category": 'Web design', "tools": 'React + ASP.NET', "url": 'https://mak-olive.vercel.app/', "img1": 'web/katy.jpg', "img2": 'web/katy2.jpg', "img3": 'web/katy3.jpg', "description": 'Boutique en ligne multilingue pour des produits de l\'huile marocain.' },
+      { "id": 13, "title": 'Boutique en ligne multilingue "M.A.K."', "category": 'Web design', "tools": 'React + ASP.NET', "url": 'https://mak-olive.vercel.app/', "img1": 'web/katy.jpg', "img2": 'web/katy2.jpg', "img3": 'web/katy3.jpg', "description": 'Boutique en ligne multilingue pour des produits de l\'huile marocain.' },
       { "id": 14, "title": 'Boutique en ligne "M.A.K."', "category": 'Web design', "tools": 'Laravel', "url": 'https://makargan.com/', "img1": 'web/katyz.jpg', "img2": 'web/katy2z.jpg', "img3": 'web/katy3z.jpg', "description": 'Boutique en ligne pour des produits de l\'huile marocain.' },
       { "id": 15, "title": 'Dot Net Store', "category": 'Web design', "tools": '.Net (Blazor)', "url": 'https://github.com/med2mad/dotNetStore', "img1": 'web/netstore.jpg', "img2": 'web/netstore2.jpg', "img3": 'web/netstore3.jpg', "description": 'Une application de commerce électronique utilisant .Net (blazor) pour une expérience client réactive/responsive, et un tableau de bord pour les mises à jour de la plateforme.' },
       { "id": 16, "title": 'HSK practice', "category": 'Web design', "tools": 'Vue.js + Supabase', "url": 'https://hsk-1practice.vercel.app/', "img1": 'web/hskpractice4.png', "img2": 'web/hskpractice2.png', "img3": 'web/hskpractice3.png', "description": 'Conçue pour améliorer l\'expérience de l\'apprentissage (en accompagnant l\'étudiant tout au long de son parcours du HSK1 au HSK6).' },
       { "id": 17, "title": 'Tomoh association', "category": 'Web design', "tools": 'Vue.js + Supabase', "url": 'https://tomo7.vercel.app/', "img1": 'web/tomo71.png', "img2": 'web/tomo71.png', "img3": 'web/tomo71.png', "description": 'Pour afficher les inscriptions de l\'association Tomo7.' },
+      { "id": 18, "title": 'App de Facturation', "category": 'Web design', "tools": 'Svelte', "url": '', "img1": 'web/factures1.png', "img2": 'web/factures2.png', "img3": 'web/factures3.png', "description": 'Logiciel de gestion des factures et suivi des paiements.' },
     ];
 
     const params = new URLSearchParams(window.location.search);
@@ -198,7 +199,7 @@
     document.getElementById('title').innerText = project.title;
     document.getElementById('category').innerText = project.category;
     document.getElementById('tools').innerText = project.tools;
-    document.getElementById('url').innerHTML = project.url ? '<a target="_blank" href="' + project.url + '">Clickez ici</a>' : 'installation local';
+    document.getElementById('url').innerHTML = project.url ? '<a target="_blank" href="' + project.url + '">Clickez ici</a>' : 'Application privée';
     document.getElementById('url').href = project.url;
     document.getElementById('description').innerText = project.description;
 

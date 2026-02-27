@@ -188,6 +188,7 @@
       { "id": 15, "title": 'Dot Net Store', "category": 'Web design', "tools": '.NET (Blazor)', "url": 'https://github.com/med2mad/dotNetStore', "img1": 'web/netstore.jpg', "img2": 'web/netstore2.jpg', "img3": 'web/netstore3.jpg', "description": 'An e-commerce web app using .Net (blazor) for a reactive/responsive client experience, and a dashboard for the platform updates.' },
       { "id": 16, "title": 'HSK practice', "category": 'Web design', "tools": 'Vue.js + Supabase', "url": 'https://hsk-1practice.vercel.app/', "img1": 'web/hskpractice4.png', "img2": 'web/hskpractice2.png', "img3": 'web/hskpractice3.png', "description": 'Designed to improve the learning experience (by accompanying the student throughout their journey from HSK1 to HSK6).' },
       { "id": 17, "title": 'Tomoh association', "category": 'Web design', "tools": 'Vue.js + Supabase', "url": 'https://tomo7.vercel.app/', "img1": 'web/tomo71.png', "img2": 'web/tomo71.png', "img3": 'web/tomo71.png', "description": 'To display the registrations of the Tomo7 association.' },
+      { "id": 18, "title": 'Invoice management software', "category": 'Web design', "tools": 'Svelte', "url": '', "img1": 'web/factures1.png', "img2": 'web/factures2.png', "img3": 'web/factures3.png', "description": 'Software for managing invoices and tracking payments.' },
     ];
 
     const params = new URLSearchParams(window.location.search);
@@ -198,7 +199,7 @@
     document.getElementById('title').innerText = project.title;
     document.getElementById('category').innerText = project.category;
     document.getElementById('tools').innerText = project.tools;
-    document.getElementById('url').innerHTML = project.url ? '<a target="_blank" href="' + project.url + '">Click Here</a>' : 'locally installed';
+    document.getElementById('url').innerHTML = project.url ? '<a target="_blank" href="' + project.url + '">Click Here</a>' : 'Private Application';
     document.getElementById('description').innerText = project.description;
 
     var myModal = document.getElementById('myModal');
